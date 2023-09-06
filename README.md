@@ -17,7 +17,7 @@ The dataset encompasses the following skin conditions:
 * Vascular lesion
 
 
-**Project Pipeline:**
+### Project Pipeline:
 
 -   **Data Setup:**
     
