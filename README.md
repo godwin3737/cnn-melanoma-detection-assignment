@@ -15,3 +15,50 @@ The dataset encompasses the following skin conditions:
 * Seborrheic keratosis
 * Squamous cell carcinoma
 * Vascular lesion
+
+
+**Project Pipeline:**
+
+-   **Data Setup:**
+    
+    -   Read and Understand the Data
+    -   Define Paths for Train and Test Images
+-   **Dataset Preparation:**
+    
+    -   Create Train and Validation Datasets from the Train Directory (Batch Size: 32)
+    -   Resize Images to 180x180
+-   **Dataset Visualization:**
+    
+    -   Develop Code to Visualize One Instance of Each of the Nine Classes
+-   **Initial Model Training:**
+    
+    -   Build a CNN Model to Detect Nine Classes
+    -   Rescale Images to Normalize Pixel Values (0-1)
+    -   Choose Optimizer and Loss Function
+    -   Train the Model for ~20 Epochs
+    -   Analyze Model Fit Results (Check for Overfitting/Underfitting)
+-   **Data Augmentation:**
+    
+    -   Implement Data Augmentation Strategies to Address Overfitting/Underfitting
+-   **Model Training on Augmented Data:**
+    
+    -   Build and Train a CNN Model on Augmented Data
+    -   Rescale Images (0-1)
+    -   Use Appropriate Optimizer and Loss Function
+    -   Train the Model for ~20 Epochs
+    -   Evaluate Model Performance and Resolution of Earlier Issues
+-   **Class Distribution Analysis:**
+    
+    -   Examine Current Class Distribution in the Training Dataset
+    -   Identify Classes with the Fewest Samples
+    -   Determine Dominant Classes in Terms of Sample Proportions
+-   **Handling Class Imbalances:**
+    
+    -   Address Class Imbalances Using the Augmentor Library
+-   **Model Training on Balanced Data:**
+    
+    -   Create and Train a CNN Model on Balanced Data
+    -   Rescale Images (0-1)
+    -   Utilize Suitable Optimizer and Loss Function
+    -   Train the Model for ~30 Epochs
+    -   Evaluate Model Performance and Determine Resolution of Issues
